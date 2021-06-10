@@ -7,6 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Space transport to Mars form</h1>
+    <form action="action.py" method="POST">
+        <h3>General information</h3>
+        <label for="first-name">First name</label>
+        <input type="text" id="first-name" name="first-name">
+        <p></p>
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="last-name">
+        <h3>Species</h3>
+        <label for="human">Human</label>
+        <input type="radio" name="human" id="human">
+        <label for="martian">Martian</label>
+        <input type="radio" name="martian" id="martian">
+        <label for="other">other</label>
+        <input type="radio" name="other" id="other">
+        <h3>Expected date of flight</h3>
+        <p>If you have to move your flight, please re-submit the form and your record will automatically be updated</p>
+        <input type="date" name="flightdate" id="flightdate">
+    </form>
 </body>
 </html>
