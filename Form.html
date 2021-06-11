@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Space transport</title>
 </head>
 <body>
     <h1>Space transport to Mars form</h1>
@@ -15,6 +15,9 @@
         <p></p>
         <label for="last-name">Last name</label>
         <input type="text" id="last-name" name="last-name">
+        <p></p>
+        <label for="id-num">Species ID number</label>
+        <input type="password" name="id-num" id="id-num">
         <h3>Species</h3>
         <label for="human">Human</label>
         <input type="radio" name="human" id="human">
@@ -22,9 +25,20 @@
         <input type="radio" name="martian" id="martian">
         <label for="other">other</label>
         <input type="radio" name="other" id="other">
+        <h3>Diet Restrictions</h3>
+        <select name="diet" id="diet">
+            <option value="all-foods">All food</option>
+            <option value="vegan">Vegan</option>
+            <option value="pescetarianism">Pescetarianism</option>
+            <option value="other">Other</option>
+        </select>
         <h3>Expected date of flight</h3>
         <p>If you have to move your flight, please re-submit the form and your record will automatically be updated</p>
         <input type="date" name="flightdate" id="flightdate">
+        <h3>Notes</h3>
+        <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+        <p></p>
+        <input type="submit" value="submit">
     </form>
 </body>
 </html>
